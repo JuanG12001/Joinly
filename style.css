@@ -1,0 +1,196 @@
+
+
+*{
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: "League Spartan", serif;
+  background-color: #F7F7F7;
+}
+
+.container{
+  padding: 20px 20px;
+}
+
+.main{
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat( 2, max-content);
+  grid-template-areas: 
+  "header"
+  "profiles"
+  ;
+}
+
+
+
+/* Comienzo del Header */
+
+.header{
+  grid-area: header;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.177);
+}
+
+.logo{
+  display: block;
+  width: 50%;
+  max-width: 200px;
+}
+
+.header__button{
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #0E5E65;
+  cursor: pointer;
+}
+
+
+.header__menu{
+  cursor: pointer;
+}
+
+.header__icons{
+  display: flex;
+  gap: 20px;
+}
+
+
+/* Fin del Header */
+
+
+/* /////////////////////////////////////////// */
+
+
+/* Comienzo de profiles */
+
+.profiles{
+  grid-area: profiles;
+  background-color: #F1F2F6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.profiles__title{
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0px 0px 25px;
+  color: #0E5E65;
+}
+
+.profiles__select{
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.profiles__select-active{
+  background-color: #0e5e65;
+  color: white;
+  font-weight: 400;
+  padding: 10px 15px;
+}
+
+.profiles__select-none{
+  background-color: #c6c6c69d;
+  color: #094a50;
+  font-weight: 400;
+  padding: 10px 15px;
+}
+
+.profiles__card{
+  background-color: white;
+  width: 100%;
+  max-width: 300px;
+  height: 350px;
+  padding: 20px;
+  box-shadow: 1px 1px 10px #0e5e652b;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.profiles__options-menu{
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.354);
+  width: 200px;
+  height: auto;
+  top: 50px;
+  right: 20px;
+  padding: 20px 5px;
+  overflow: hidden;
+  transition: 3s;
+}
+
+.profiles__options-list{
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 18px;
+}
+
+.profiles__options-text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.profiles__options-text:hover{
+  background-color: rgb(209, 209, 209);
+}
+
+.profiles__options-icon{
+  margin-right: 10px;
+  width: 18px;
+}
+
+.profiles__icon-more{
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.profiles__avatar{
+  width: 110px;
+  height: 110px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.profiles__content-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #094a50;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.profiles__more{
+  width: 25px;
+  cursor: pointer;
+}
+
+
+/* Fin de profiles */
+
+/* /////////////////////////////////////////// */
