@@ -47,6 +47,22 @@ body{
   max-width: 200px;
 }
 
+.header__add{
+  background-color: #32A596;
+  border: 3px solid #094a50;
+  padding: 6px;
+  border-radius: 10%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header__icon-add{
+  width: 50px;
+
+}
+
 .header__button{
   height: 70px;
   border-radius: 50%;
@@ -134,7 +150,6 @@ body{
   right: 20px;
   padding: 20px 5px;
   overflow: hidden;
-  transition: 3s;
 }
 
 .profiles__options-list{
@@ -172,7 +187,7 @@ body{
 .profiles__avatar{
   width: 110px;
   height: 110px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 50%;
 }
 
@@ -183,6 +198,33 @@ body{
   color: #094a50;
   gap: 10px;
   margin-bottom: 10px;
+}
+
+.rata{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.profiles__profesion{
+  background-color:  #258d7f;
+  color: #F1F2F6;
+  border-radius: 10px;
+  width: 80px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+
+.profiles__balance{
+  font-size: 1.5rem;
+}
+
+.profiles__balance-text{
+  color: #094a50;
 }
 
 .profiles__more{
