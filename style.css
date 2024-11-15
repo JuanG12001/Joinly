@@ -100,6 +100,13 @@ body{
   align-items: start;
 }
 
+.profiles__content-card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .profiles__title{
   font-size: 2rem;
   font-weight: 600;
@@ -130,7 +137,6 @@ body{
   padding: 10px 15px;
   cursor: pointer;
 }
-
 
 
 .profiles__card{
@@ -309,3 +315,38 @@ body{
 }
 
 /* fin de add-users */
+
+
+
+
+/* "header"
+"  "profiles" */
+
+
+/* Comienzo del media Query */
+
+@media ( min-width: 900px) {
+  .main {
+    display: grid;
+    grid-template-columns: 2fr 8fr; 
+    grid-template-areas: 
+      " edit header"
+      " edit profiles";
+  }
+
+  .men{
+    grid-area: edit;
+    background-color: #0E5E65;
+    display: block;
+  }
+
+  .profiles__content-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+}
+
+/* fin del media Query */
